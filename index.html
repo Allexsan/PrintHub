@@ -1,0 +1,102 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintHub - Печатные Услуги</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PrintHub</div>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>PrintHub</h1>
+            <p>Минималистичные решения для печати и дизайна</p>
+            <a href="#services" class="cta-button">Посмотреть услуги</a>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card" data-service="magazines">
+                    <h3>Журналы</h3>
+                    <p>Профессиональная печать журналов высокого качества.</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+                <div class="service-card" data-service="documents">
+                    <h3>Документы</h3>
+                    <p>Быстрая и точная печать документов. Черно-белая и цветная.</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+                <div class="service-card" data-service="books">
+                    <h3>Книги</h3>
+                    <p>Печать книг в твердом и мягком переплете.</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+                <div class="service-card" data-service="photos">
+                    <h3>Фото</h3>
+                    <p>Фотопечать на различных материалах. Высокое качество.</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+                <div class="service-card" data-service="advertising">
+                    <h3>Реклама</h3>
+                    <p>Печать рекламных материалов: баннеры, флаеры, постеры.</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+                <div class="service-card" data-service="design">
+                    <h3>Дизайн</h3>
+                    <p>Оформление и дизайн для ваших проектов. Креативные решения.</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+                <div class="service-card" data-service="scanning">
+                    <h3>Скан</h3>
+                    <p>Сканирование документов и фото в высоком разрешении.</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+            </div>
+
+            <!-- Модальное окно для деталей услуги -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="modal-body"></div>
+                    <a href="#contact" class="cta-button">Заказать</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами для заказа услуг.</p>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Сообщение" rows="5" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <div class="contact-info">
+                <p>Тел: +7 (909) 348-91-74</p>
+                <p>Email: Liya2003arturovna@gmail.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PrintHub. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
